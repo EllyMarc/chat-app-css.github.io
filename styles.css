@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 96%);
+    font-family: "Rubik", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#desk {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 650px;
+    background-image: linear-gradient(to top, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    z-index: -1; /* Certifica-se que ficará atrás de todos os outros elementos */
+    border-radius: 0 0 300px 300px;
+}
+
+#desk2 {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 650px;
+    background-color: rgba(255, 255, 255, 0.355);
+    z-index: -1; /* Certifica-se que ficará atrás de todos os outros elementos */
+    border-radius: 300px 300px 0 0;
+}
+
+#center {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#phone {
+    align-items: center;
+    height: 560px;
+    width: 275px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    width: 100%;
+    height: 75px;
+    border-radius: 25px 25px 5px 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#upheader {
+    background-color: white;
+    width: 60%;
+    height: 25px;
+    border-radius: 0 0 20px 20px;
+    margin: 0 auto;
+}
+
+#in-header {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 20px;   
+    align-items: center; 
+}
+
+#in-header i {
+    color: white;
+    font-size: 0.7em;
+}
+
+#profile {
+    height: 25px;
+    width: 25px;
+    border: solid 1.px white;
+    border-radius: 100%;
+    margin: 0 12px 0 20px;
+}
+
+#social h2 {
+    color: white;
+    font-size: 0.7em;
+    font-weight: 400;
+    margin-right: 70px;
+}
+
+#social p {
+    color: rgba(210, 210, 210, 0.6);
+    font-size: 0.6em;
+}
+
+#messages {
+    width: 100%;
+    height: 475px;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 0 0 25px 25px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#messages p {
+    font-size: 0.7em;
+    padding: 10px;
+    margin: 0 10px 10px 10px;
+}
+
+.received {
+    background-color: hsl(210, 8%, 86%);
+    color: hsl(276, 55%, 52%);
+    border-radius: 10px 10px 10px 5px;
+    padding: 10px;
+    width: auto;
+    max-width: 60%;
+    align-self: flex-start;
+}
+
+.send {
+    background-color: white;
+    color: black;
+    border-radius: 10px 10px 5px 10px;
+    padding: 10px;
+    width: auto;
+    align-self: flex-end;
+}
+#dogs {
+    margin: 0 15px 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    
+    & img {
+        height: 40px;
+        width: 40px;
+        border-radius: 5px;
+        margin-right: 5px;
+        
+    }
+}
+
+
+.pay {
+    background-image: linear-gradient(to left, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    border-radius: 10px 10px 10px 5px;
+    padding: 10px;
+    width: auto;
+    max-width: 60%;
+    color: white;
+    display: flex; /* Adiciona flexbox */
+    justify-content: space-between; /* Distribui os itens entre os extremos */
+    align-items: center; /* Centraliza verticalmente */
+    
+    & span {
+        font-size: 1.4em;
+        font-weight: bold;
+        align-self: flex-end;
+    }
+}
+
+#msg-send {
+    background-color: white;
+    border-radius: 60px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Distribui o input e o ícone nas extremidades */
+    box-sizing: border-box; /* Inclui o padding no cálculo do tamanho total */
+    overflow: hidden; /* Evita que o conteúdo ultrapasse os limites da div */
+    
+    & p {
+        opacity: 0.5;
+        padding-top: 24px;
+    }
+}
+    & i {
+        font-size: 1.8em;
+        padding-right: 10px ;
+    }
+
+article {
+    width: 500px;
+    margin-left: 100px;
+
+    & h1 {
+    color: hsl(271, 36%, 24%);
+    font-weight: 500;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    }
+
+    p {
+        color: hsl(270, 7%, 64%);
+        line-height: 30px;
+        font-size: 1.15em
+    }
+}
+
+footer {
+    background-color: hsla(264, 100%, 61%, 0.553);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    font-size: 0.8em;
+    color: white;
+    font-weight: 200;
+
+    & a {
+        color: white;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    & a:hover {
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1000px){
+ #center {
+    flex-direction: column;
+ }
+
+    #desk2 {
+    display: none;
+ }
+
+ #phone {
+    margin-bottom: 60px;
+ }
+
+ article {
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+    width: 80%;
+
+    & p {
+        font-size: 1em;
+    }
+ }
+ 
+}
